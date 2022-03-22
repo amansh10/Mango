@@ -1,0 +1,231 @@
+@import url("https://fonts.googleapis.com/css?family=Poppins:wght@100;200;300;400;500;600;700;800;900$display=swap");
+
+/*The dot( . ) signifies a class name while the hash ( # ) signifies an element with a specific id attribute. */
+* {
+
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; /* box-sizing allows to include the padding and border in an alement total width and height */
+
+}
+body{
+    font-family: "Poppins", sans-serif;
+    background-color: white;
+
+}
+h1{
+    font-size:  2.5rem; /*rem is a simple CSS unit,where 1rem=16px*/
+    font-weight: 700; /*font-weight sets the boldness of the font*/
+}
+
+h2{
+    font-size:  1.8rem;
+    font-weight: 600;
+    color: white;
+}
+h3{
+    font-size:  1.4rem;
+    font-weight: 800;
+}
+h4{
+    font-size:  1.1rem;
+    font-weight: 600;
+}
+h5{
+    font-size:  1rem;
+    font-weight: 400;
+    color: black;
+
+
+}
+
+h6{
+    color:black ;
+}
+
+.navbar{
+    font-size: 16px;
+    
+}
+.navbar-light .navbar-nav .nav-link{
+    padding: 0 20px;
+    color:black;
+    transition:0.3s ease; /* transition allows to change property value smoothly ease represnts the slow change*/
+}
+
+.navbar-light .navbar-nav .nav-link:hover,
+.navbar i:hover,
+.navbar-light .navbar-nav .nav-link.active,
+.navbar i.active{
+    color:coral;
+}
+
+
+button{
+    font-size: 0.8rem;
+    font-weight: 700;
+    outline:none; /*outline in CSS allows to define the outline area of a  box in HTML*/
+    border:none;
+    background: black;
+    color:aliceblue;
+    padding: 13px 30px;
+    text-transform: uppercase;
+}
+
+#direct-ticket .one img{
+    width:100%;
+    height:100%;
+    background-position: center center; /* background-position property sets the position of a image*/
+    background-repeat: no-repeat; /*background-repeat property sets if the images should be repeated or not*/
+    background-size: cover; /*background-size represents the size of the background-image*/
+    position: relative; /*position allows where the elements should be positioned*/
+
+
+
+}
+
+#direct-ticket .one .details{
+    position: absolute;
+    width:100%;
+    height:100%;
+    top:0;
+    left:0;
+    transition: 0.3s ease;
+
+}
+#direct-ticket .one:hover .details{
+
+    cursor:pointer;
+    background-color: rgba(245, 178, 178, 0.7);
+}
+
+#direct-ticket .one .details button{
+    display:inline-block;  /* used here to display the item in horizontal direction in a box */
+    font-size: 14px;
+    font-weight: 500;
+    color:black;
+    background: none;
+    text-transform: uppercase;
+    border-bottom: 1px solid black;
+    padding: 2.px;
+    transform: translateY(70px); /*transform property allows to rotate,scale,or tranlate and element */
+    transition: 0.3s ease;
+
+}
+
+#direct-ticket .one .details button:hover{
+    color: white;
+    border-bottom: 1px solid white ;
+}
+
+#direct-ticket .one:nth-child(1) .details{
+    display:flex; /*easy to understand by saying a container without border*/
+    justify-content: center; /* justify-content defines hwo the browser distrbutes space between the contents*/
+    flex-direction: column; /*how the elements should be defined inside the flex*/
+    align-items: flex-start; /*where the elemnts should be positioned inside the flex*/
+    text-align: start;
+}
+
+#direct-ticket .one:nth-child(2) .details{
+    display:flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+#direct-ticket .one:nth-child(3) .details{
+    display:flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: flex-end;
+    text-align: right;
+}
+
+footer{
+    background-color: white;
+
+}
+footer h5{
+    background-color: white;
+    font-weight: 700;
+    font-size: 1.2rem;
+}
+
+footer li{
+    padding-bottom: 4px;
+
+}
+footer li a{
+    font-size: 0.8rem;
+    color:grey;
+}
+
+footer li a:hover{
+    color:black;
+}
+footer p{
+    color: black;
+    font-size: 0.8rem;
+
+}
+.product{
+    cursor: pointer;
+    margin-bottom: 2rem; 
+
+}
+
+.product img{
+    transition: 0.3s all;
+
+}
+.product:hover img{
+    opacity: 0.7;
+
+}
+
+.product .buy-btn{
+    background: orange;
+    transform: translateY(20px);
+    opacity:0;
+    transition: 0.3s all;
+
+}
+
+.product:hover .buy-btn{
+    
+    transform: translateY(0);
+    opacity:1;
+  
+
+
+
+}
+
+.small-img-group{
+    display: flex;
+    justify-content: space-between;
+}
+.small-img-col{
+    flex-basis: 24%;
+    cursor: pointer;
+
+}
+
+.Samir select{
+    display: block;
+    padding:5px 10px;
+}
+
+.Samir input{
+    width:50px;
+    height:40px;
+    padding-left: 10px;
+    font-size: 16px;
+    margin-right: 10px;
+}
+
+
+
+
+
